@@ -1,0 +1,66 @@
+{
+  "model": "DenseNet201 Model 0",
+  "overall_metrics": {
+    "accuracy": 0.8317631224764468,
+    "accuracy_percentage": 83.17631224764467,
+    "quadratic_weighted_kappa": 0.7944933941012504,
+    "linear_kappa": 0.5482162141126796,
+    "matthews_correlation_coefficient": 0.5612889435778605,
+    "roc_auc_macro": 0.8662994929553814,
+    "roc_auc_weighted": 0.8667826997943027
+  },
+  "test_set_info": {
+    "total_test_images": 743,
+    "class_distribution": {
+      "0": 555,
+      "1": 41,
+      "2": 85,
+      "3": 30,
+      "4": 32
+    }
+  },
+  "confusion_matrix": [
+    [
+      532,
+      12,
+      10,
+      0,
+      1
+    ],
+    [
+      34,
+      3,
+      4,
+      0,
+      0
+    ],
+    [
+      42,
+      7,
+      30,
+      3,
+      3
+    ],
+    [
+      2,
+      0,
+      0,
+      28,
+      0
+    ],
+    [
+      2,
+      0,
+      3,
+      2,
+      25
+    ]
+  ],
+  "class_names": [
+    "No DR",
+    "Mild NPDR",
+    "Moderate NPDR",
+    "Severe NPDR",
+    "Proliferative DR"
+  ]
+}
