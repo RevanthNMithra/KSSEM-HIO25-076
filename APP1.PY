@@ -34,7 +34,7 @@ def focal_loss(y_true, y_pred, alpha=ALPHA, gamma=GAMMA):
     return tf.reduce_mean(tf.reduce_sum(focal_loss_val, axis=-1))
 
 # Load model
-MODEL_PATH = r"D:\Final Yr Project\mBRSET Data\densenet_ensemble_final\model_0_best.keras"
+MODEL_PATH = r"D:"#Update the model path
 model = tf.keras.models.load_model(MODEL_PATH, custom_objects={'focal_loss': focal_loss})
 
 def ben_graham_preprocessing(img, img_size):
@@ -744,4 +744,5 @@ if __name__ == '__main__':
     print("📊 Classes: 0=No_DR, 1=Mild, 2=Moderate, 3=Severe, 4=Proliferate_DR")
     print("🌐 Starting server at http://localhost:5000")
     print("=" * 60)
+
     app.run(debug=True, host='0.0.0.0', port=5000)
